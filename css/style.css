@@ -72,16 +72,25 @@ header{
     height: 20.18px;
     padding-right: 8px;
 }
-.carousel{
+
+iframe{
     width: 100%;
-    height: 445px;
-    margin-top: 10px;
+    height: 20%;
 }
 nav{
+    display: flex;
+    justify-content: center;
     max-width: 1420px;
     width: 100%;
+    height: 2395px;
+    padding-top: 2%;
     background-color: #ecf0f1;
-    padding: 76px;
+}
+.nav{
+    width: 100%;
+    height: 100%;
+    margin: 4%;
+
 }
 .news-one{
     width: 100%;
@@ -94,13 +103,20 @@ nav{
     display: flex;
     justify-content: space-between;
 }
-
+.box-news-cacildis-p{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 31.5%;
+}
+.box-news-cacildis-p img{
+    width: 100%;
+    position: relative;
+}
 .box-news-cacildis-p p{
     background-color: rgba(255, 30, 0, 0.637);
     float: left;
-    position: relative;
-    margin-top: 150px;
-    margin-right: -200px;
+    position: absolute;
+    display: flex;
     padding: 10px;
     color: white;
 }
@@ -125,10 +141,10 @@ nav{
 }
 .porris-news h3{
     width: 70%;
+    height: 3%;
 }
 .porris-news{
     width: 66%;
-    height: 750px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -142,7 +158,7 @@ h4{
     padding: 0;
 }
 .img-porris{
-    width: 360px;
+    width: 48%;
     height: auto;
     background-color: #f1f1f1;
     padding-bottom: 30px;
@@ -151,7 +167,7 @@ h4{
 }
 .img-porris img{
     width: 100%;
-    height: auto;
+    height: 60%;
     object-fit: cover;
     margin-bottom: 10px;
 
@@ -162,24 +178,7 @@ h4{
 }
 .news-tree-container{
     display: flex;
-}
-.porris-publicity{
-    width: 28%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    margin-top: 60px;
-    align-self: end;
-    position: absolute;
-}
-.porris-publicity img{
     width: 100%;
-    margin-top: 10px;
-}
-.news-publicity-2{
-    display: none;
 }
 .news-tree{
     width: 100%;
@@ -189,7 +188,7 @@ h4{
     justify-content: space-between;
 }
 .news-tree-mussum{
-    width: 375px;
+    width: 30%;
     display: flex;
     flex-direction: column;
 }
@@ -204,8 +203,7 @@ h4{
     flex-direction: column;
 }
 .pirulita{
-    margin-left: 30px;
-    padding-left: 10px;
+    padding-left: 2%;
 }
 .pirulita h2{
     color: #e74c3c;
@@ -223,7 +221,25 @@ h4{
     margin-bottom: 20px;
 }
 .news-tree-mussum-pirulirta img{
-    margin-right: 20px;
+    width: 50%;
+    margin-right: 5%;
+}
+.porris-publicity{
+    width: 28%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 60px;
+    align-self: end;
+    position: absolute;
+}
+.porris-publicity img{
+    width: 100%;
+    margin-top: 10px;
+}
+.news-publicity-2{
+    display: none;
 }
 
 /* footer */
@@ -264,8 +280,11 @@ span{
     width: 150px;
     height: 30.21px;
 }
+.footer-logow6{
+    display: none;
+}
 /* midia para tablet */
-@media screen and (max-width: 820px) and (min-width: 374px)  {
+@media screen and (max-width: 820px) and (min-width: 376px)  {
     body{
         max-width: 820px;
     }
@@ -277,6 +296,7 @@ span{
     .header{
         margin-right: 38px;
         margin-left: 42px;
+        padding: 0;
     }
     .header-menu{
         width: 35px;
@@ -302,71 +322,52 @@ span{
     }
     /* nav */
     nav{
-        width: 820px;
-        align-items: center;
-        justify-content: center;
-        padding: 46px 0 0 0;
+        width: 100%;
+        max-width: 820px;
         display: flex;
-        flex-direction: column;
+        justify-content: center;
     }
-    .nav-containe{
-        max-width: 720px;
-        height: 1800px;
-    }
-    .carousel{
-        width: 710px;
-        margin: auto;
-        height: 280px;
-    }
-    .news-one{
-        width: 720px;
-        margin: auto;
-        margin-top: 50px;
-    }
-
-    .box-news-cacildis-p p{
-        margin-top: 90px;
-    }
-    .news-one h3{
-        display: none;
-    }
-    .box-news-cacildis-p img{
-        width: 230px;
-    }
-    .news-two{
-        max-width: 720px;
-        margin: auto;
-    }
-    .porris-news{
+    .nav{
         width: 100%;
     }
-    .img-porris{
-        width: 48%;
+    .carousel{
+        height: 290px;
     }
-    .news-publicity-2{
-        display: inline;
+    .box-news-cacildis-p{
+        width: 30%;
+        height: auto;
+    }
+    .box-news-cacildis-p img{
+        width: 100%;
+    }
+    .box-news-cacildis-p p{
+        margin-top: 80px;
+        margin-right: -200px;
+        font-size: 10pt;
+        padding: 8px;
+    }
+    .news-tree-container{
+        flex-wrap: wrap;
+    }
+    .news-tree-mussum{
+        width: 49%;
+    }
+    .porris-publicity{
+        width: 45%;
+        position: relative;
+        margin-top: -55%;
+        margin-left: 55%;
+        align-self: flex-start;
     }
     .news-publicity-1{
         display: none;
     }
-    .porris-publicity{
-        position: relative;
-        margin-top: -400px;
-        margin-right: 20px;
-        width: 300px;
+    .news-publicity-2{
+        display: inline;
     }
-    .news-tree-container{
-        flex-wrap: wrap;
-        width: 720px;
+    .porris-news{
+        width: 100%;
     }
-    .news-tree-mussum{
-        width: 340px;
-    }
-    .dow{
-        margin: 0;
-        padding: 0;
-    }
-
     /* footer */
     .footer-two{
         max-width: 820px;
@@ -380,6 +381,112 @@ span{
         margin-right: 59px;
     }
 }
-@media screen and (max-width: 373px) {
-    
+@media screen and (max-width: 376px) {
+    header{
+        width: 100%;
+        height: 86px;
+    }
+    .header{
+        padding-left: 11px;
+        padding-right: 100px;
+    }
+    .header-menu{
+        width: 35px;
+        margin-left: 7px;
+    }
+    .header-logo img{
+        width: 150px;
+        height: 30px;
+    }
+    .header-social{
+        display: none;
+    }
+    nav{
+        height: auto;
+    }
+    .nav{
+        height: 4000px;
+    }
+    .carousel{
+        height: auto;
+    }
+    .box-news-cacildis{
+        flex-direction: column;
+    }
+    .news-one h3{
+        display: none;
+    }
+    .box-news-cacildis-p{
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    .porris-news{
+        width: 100%;
+        height: 1388px;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .porris-news h3{
+        margin-bottom: 0;
+    }
+    .img-porris{
+        width: 100%;
+        padding: 0;
+        height: 300px;
+    }
+    .img-porris img{
+        height: auto;
+    }
+    .news-tree-container{
+        flex-direction: column;
+    }
+    .news-tree-mussum{
+        width: 100%;
+    }
+    .pirulita{
+        padding: 0;
+    }
+    .porris-publicity{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .news-publicity-1{
+        display: none;
+    }
+    .news-publicity-2{
+        display: inline;
+    }
+    .porris-publicity img{
+        width: 60%;
+    }
+    .span span{
+        font-size: 10px;
+        width: 90%;
+        margin-left: 11px;
+    }
+    .footer-logo{
+        width: 100px;
+        height: 20px;
+        margin-right: 11px;
+    }
+    .footer-logo img{
+        width: 100px;
+        height: 20px;
+    }
+    .footer-span-noticia{
+        display: none;
+    }
+    .footer-two{
+        width: 375px;
+        max-width: 370px;
+        padding: 0;
+    }
+    .footer-logow3{
+        display: none;
+    }
+    .footer-logow6{
+        display: inline;
+    }
 }

@@ -1,6 +1,13 @@
+body{
+    
+    background: #ecf0f1;
+}
 .carrosel{
     
     width: 100%;
     height: auto;
-    
+}
+img {
+    width: 1139px;
+    height: 450px;
 }
